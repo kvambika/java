@@ -4,7 +4,8 @@ pipeline {
     stages {
         stage('version') {
             steps {
-                sh 'java --version'
+                sh 'javac hello.java'
+                sh 'java hello'
             }
         }
     }
