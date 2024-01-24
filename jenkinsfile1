@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('version') {
             steps {
-                java --version
+                'java --version'
             }
         }
     }
