@@ -2,7 +2,13 @@ pipeline {
     agent any
 
     stages {
-        stage('version') {
+        stage('Version') {
+            steps {
+                bat 'java --version'
+                
+            }
+        }
+        stage('Build') {
             steps {
                 bat 'javac hello.java'
                 bat 'java hello'
